@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="30sp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/plus"
+            android:onClick="show_gallery"
+            android:id="@+id/customerPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtFname"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="@dimen/drawablepadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtonames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtonames"
+                android:layout_width="match_parent"
+                android:paddingLeft="35dp"
+                android:layout_height="wrap_content"
+                android:hint="Other Names" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:drawableLeft="@drawable/address"
+                android:layout_width="match_parent"
+                android:drawablePadding="15dp"
+                android:layout_height="wrap_content"
+                android:hint="Address" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtcustid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtCustid"
+                android:drawableLeft="@drawable/id"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer ID" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtID"
+                android:drawableLeft="@drawable/id"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="National ID" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtNumber"
+                android:drawableLeft="@drawable/contact"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSignin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:background="@drawable/shape"
+            android:onClick="process"
+            android:text="Create User"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

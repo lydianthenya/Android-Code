@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="Searchby">
+        <item>National ID</item>
+        <item>Name</item>
+        <item>Customer ID</item>
+
+    </string-array>
+    <string name="app_name">FaidaBank</string>
+    <string name="title_activity_register_user">RegisterUser</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_title">Search</string>
+</resources>

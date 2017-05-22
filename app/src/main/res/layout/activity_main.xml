@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.faidabank.MainActivity">
+    <TextView
+        android:text="Search By"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Nat ID"
+                android:id="@+id/radioNationalId"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:id="@+id/radioName"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Cust ID"
+                android:id="@+id/radioCustomerId"
+                android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_marginTop="100dp"
+        android:hint="Search"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="20dp"
+
+        android:layout_width="match_parent"
+        android:onClick="searchuser"
+        android:layout_height="wrap_content"
+
+        android:text="Search User" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:onClick="adduser"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Add new user" />
+</LinearLayout>
